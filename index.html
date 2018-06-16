@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+
+    <title>Crystal Comparator</title>
+</head>
+
+<body background="assets/images/HappyAcidBG.png">
+
+<h1>Crystal Comparator</h1>
+
+<div class="panel" id="game_rules">
+    <h3>Game Rules</h3>
+    <ul>
+        <li>Deposit the correct amount of gems in the box below</li>
+        <li>Depositing over the number forfeits all of your gems.</li>
+        <li>The crystal values are random at the beggining of each game.</li>
+    </ul>
+</div>
+
+<div class="panel" id="number_to_match">
+    <p>Gems to Deposit: <span id="gems_to_deposit">0000</span></p>
+</div>
+
+<div class="panel" id="game_stats">
+    <p>Wins: <span id="wins">0</span></p>
+    <p>Losses: <span id="losses">0</span></p>
+</div>
+
+<div class="panel" id="row_of_gems">
+    <img src="assets/images/GreenRupee.gif" alt="GreenRupeeimg" class="rupee" id="GreenRupee">
+    <img src="assets/images/BlueRupee.gif" alt="BlueRupeeimg" class="rupee" id="BlueRupee">
+    <img src="assets/images/RedRupee.gif" alt="RedRupeeimg" class="rupee" id="RedRupee">
+    <img src="assets/images/GoldRupee.gif" alt="GoldRupeeimg" class="rupee" id="GoldRupee">
+</div>
+
+<div class="panel" id="your_number">
+    <p>Your Gems: <span id="userGemCount">0</span></p>
+</div>
+
+<!-- <div class="panel" id="deco"> -->
+    <!-- <img src="assets/images/ToonLink.gif" alt="Deco"  id="ToonLnk"> -->
+<!-- </div> -->
+
+</body>
+</html>
