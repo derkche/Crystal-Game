@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="assets/javascript/game.js"></script>
 
@@ -14,25 +15,29 @@
 
 <body background="assets/images/HappyAcidBG.png">
     
-<div class="panel">
+<div class="panel" id="title">
     <h1>Crystal Comparator</h1>
 </div>
 
 
-<div class="panel" id="game_rules">
-    <h3>Game Rules</h3>
+<div class="panel" class="game_rules">
+    <h3 id="game_rules_h3">Game Rules</h3>
         <p class="game_rules_ptag">Deposit the correct amount of gems in the box below</p>
         <p class="game_rules_ptag">Depositing over the number forfeits all of your gems.</p>
-        <p class="game_rules_ptag">The crystal values are random at the beggining of each game.</p>
+        <p class="game_rules_ptag">The crystal values are random at the beginning of each game.</p>
+</div>
+
+<div class="panel" id="game_stats">
+    <p>Wins: <span id="wins">0</span> Losses: <span id="losses">0</span></p> 
+    <!-- <p>Losses: <span id="losses">0</span></p> -->
 </div>
 
 <div class="panel" id="number_to_match">
     <p>Gems to Deposit: <span id="gems_to_deposit">0000</span></p>
 </div>
 
-<div class="panel" id="game_stats">
-    <p>Wins: <span id="wins">0</span></p>
-    <p>Losses: <span id="losses">0</span></p>
+<div class="panel" id="your_number">
+    <p>Your Gems: <span id="userGemCount">0</span></p>
 </div>
 
 <div class="panel" id="row_of_gems">
@@ -40,10 +45,6 @@
     <img src="assets/images/BlueRupee.gif" alt="BlueRupeeimg" class="rupee" id="BlueRupee">
     <img src="assets/images/RedRupee.gif" alt="RedRupeeimg" class="rupee" id="RedRupee">
     <img src="assets/images/GoldRupee.gif" alt="GoldRupeeimg" class="rupee" id="GoldRupee">
-</div>
-
-<div class="panel" id="your_number">
-    <p>Your Gems: <span id="userGemCount">0</span></p>
 </div>
 
 <!-- <div class="panel" id="deco"> -->
