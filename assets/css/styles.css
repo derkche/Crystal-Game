@@ -1,4 +1,21 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.panel {
+    max-width: 500px;
+    margin: auto;
+    border-style: dashed;
+    border-color: yellow;
+    border-radius: 5px;
+    margin-bottom: 4px;
+}
 
 .rupee {
     height: 180px;
+}
+
+#game_rules {
+
 }
